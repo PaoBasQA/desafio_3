@@ -7,10 +7,10 @@ alert("El juego consiste en que vayas eligiendo tu ruta de aprendizaje en progra
 alert("Cada ruta te llevará a un destino diferente.");
 
 // Elección de área: Front-End o Back-End
-let ruta = prompt("¿Qué área te gustaría explorar? (Front-End / Back-End)").trim().toLowerCase();  //Recordar: .trim elimina espacios en blanco.
+let ruta = prompt("¿Qué área te gustaría explorar? (Front-End / Back-End)").trim();  //Recordar: .trim elimina espacios en blanco.
 if (ruta === "Front-End") {
     alert("¡Excelente elección! ¿Y qué tecnología te gustaría aprender: React o Vue?");
-    let framework = prompt("React / Vue").trim().toLowerCase();
+    let framework = prompt("React / Vue").trim();
     if (framework === "React") {
         alert("¡Excelente elección! React es muy popular y potente.");
     } else if (framework === "Vue") {
@@ -20,7 +20,7 @@ if (ruta === "Front-End") {
     }
 } else if (ruta === "Back-End") {
     alert("¡Excelente elección! Y qué tecnología te gustaría aprender: C# o Java?");
-    let lenguaje = prompt("C# / Java").trim().toLowerCase();
+    let lenguaje = prompt("C# / Java").trim();
     if (lenguaje === "C#") {
         alert("¡Genial! C# es ideal para aplicaciones empresariales y juegos con Unity.");
     } else if (lenguaje === "Java") {
@@ -33,7 +33,7 @@ if (ruta === "Front-End") {
 }
 
 // Elección de especialización
-let especializacion = prompt("¿Te gustaría seguir especializándote en tu área o desarrollarte como Fullstack? (Especializarme / Fullstack)").trim().toLowerCase();
+let especializacion = prompt("¿Te gustaría seguir especializándote en tu área o desarrollarte como Fullstack? (Especializarme / Fullstack)").trim();
 if (especializacion === "Especializarme") {
     alert("¡Genial! Profundizarás tus conocimientos en esta área.");
 } else if (especializacion === "Fullstack") {
